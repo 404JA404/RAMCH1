@@ -270,3 +270,14 @@ INNER JOIN student_course sc ON s.id     = sc.student_id
 
 INNER JOIN courses co        ON co.id    = sc.course_id
 ORDER BY s.name, co.title;
+
+====AQUI ABAJO SE REALIZA EL EJERCICIO PEDIDO===
+SELECT
+    s.name AS estudiante,
+    co.title AS curso,
+    sc.grade AS nota
+FROM students s
+INNER JOIN student_course sc ON s.id = sc.student_id
+INNER JOIN courses co ON co.id = sc.course_id
+WHERE sc.grade >= 4.0
+ORDER BY sc.grade DESC;
