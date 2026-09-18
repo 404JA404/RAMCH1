@@ -190,15 +190,16 @@ INSERT INTO students (name, email) VALUES
   ('Sin Cursos Uno',   'sc1@uni.edu'),
   ('Sin Cursos Dos',   'sc2@uni.edu');
 -- students 11 y 12 NO tienen cursos (LEFT JOIN)
-INSERT INTO courses (title, instructor, credits) VALUES
-  ('Bases de Datos I',       'Dr. Ramírez',   4),
-  ('Algoritmos',             'Dra. Mendoza',  3),
-  ('Redes de Computadores',  'Dr. Valencia',  3),
-  ('Programación Web',       'Dra. Soto',     4),
-  ('Inteligencia Artificial','Dr. Patiño',    3),
-  ('Sistemas Operativos',    'Dra. Cárdenas', 3),
-  ('Ingeniería de Software', 'Dr. Bermúdez',  4),
-  ('Estadística Aplicada',   'Dra. Flórez',   3);
+INSERT INTO courses (title, instructor, credits) VALUES 
+('Bases de Datos I', 'Dr. Ramírez', 4), 
+('Algoritmos', 'Dra. Mendoza', 3), 
+('Redes de Computadores', 'Dr. Valencia', 3), 
+('Programación Web', 'Dra. Soto', 4), 
+('Inteligencia Artificial','Dr. Patiño', 3), 
+('Sistemas Operativos', 'Dra. Cárdenas', 3), 
+('Ingeniería de Software', 'Dr. Bermúdez', 4), 
+('Estadística Aplicada', 'Dra. Flórez', 3);
+
 
 INSERT INTO student_course (student_id, course_id, enrolled_at, grade) VALUES
   (1, 1, '2024-01-15', 4.5),
