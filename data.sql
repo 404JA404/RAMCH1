@@ -1,5 +1,5 @@
 -- =============================================
--- ESQUEMA COMPLETO - CLASE SQL JOIN
+-- LOSF EJERCICIOS COMPLETOS DE CLASE SQL JOIN
 -- =============================================
 CREATE DATABASE IF NOT EXISTS clase_joins;
 USE clase_joins;
